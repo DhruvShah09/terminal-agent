@@ -47,5 +47,7 @@ RUN echo "id,name,age\n1,Alice,30\n2,Bob,25\n3,Charlie,35" > /home/user/mock.csv
 # Expose a port for SSH (optional)
 EXPOSE 22
 
+RUN mkdir source 
+ADD src source 
 # Start with a Bash shell
 CMD ["/bin/bash"]
